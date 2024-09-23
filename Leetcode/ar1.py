@@ -6,7 +6,7 @@ def reverseWords(S):
                         s+= S[i::a-1]  
                         a= i              
         return s  
-        # code here 
+       
         
 
 s = input("enter")

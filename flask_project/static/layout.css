@@ -1,0 +1,15 @@
+html{
+    scroll-behavior:  smooth;
+}
+body{
+    margin: 0;
+    min-width: 100px;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    
+}
+.w3-container w3-blue{
+    border: solid 1px black;
+    background-color: aqua;
+}

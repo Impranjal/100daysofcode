@@ -33,4 +33,5 @@ def main():
         print(vs)
         print(f"Compare B : {B['name']},a {B['description']},from {B['country']}")
         choose = input("Who has more followers A or B ?")
+        
 

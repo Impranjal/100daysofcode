@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block contents %}
+    {% if posts is defined %}
+    {% for data in posts %}
+    <table class="worker">
+    <tr style="border:1px solid black;">
+        <th>Name</th>
+        <th>Track</th>
+        <th>Project</th>
+        <th>Manager</th>
+        
+    </tr>
+    <tr>
+        
+        <td>{{data['author']}}</td>
+        <td>{{data['Track']}}</td>
+        <td>{{data['project']}}</td>
+        <td>{{data['manager']}}</td>
+            
+    </tr>
+    {% endfor %}
+    {% endif %}
+</table>
+{% endblock %}
