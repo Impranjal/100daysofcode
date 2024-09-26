@@ -29,7 +29,7 @@ def perform(num1,num2):
         num = int(input("enter the number"))
         perform(output,num)
 
-num1 = int(input("enter the first number"))
-num2 = int(input("enter the second number"))  
-out = perform(num1,num2)
-print(out)
+# num1 = int(input("enter the first number"))
+# num2 = int(input("enter the second number"))  
+# out = perform(num1,num2)
+# print(out)
