@@ -1,13 +1,30 @@
 """Practice the pytest .."""
 import pytest
-import calculator as m
-class Testclac:
-    def test_multi(self):
-        result = m.multi(2,4)
-        result == 8
-    def test_sub(self):
-        result = m.sub(4,2)
-        result == 2
-    def test_add(self):
-        result = m.add(2,4)
-        assert result == 6
+
+class clac:
+        
+        def add(n1,n2):
+            return n1+n2
+        def sub(n1,n2):
+            return n1-n2
+        def multi(n1,n2):
+            return n1*n2
+        def divi(n1,n2):
+            return n1/n2
+
+@pytest.fixture
+def class_instance():
+      return clac()
+def test_add(class_instance):
+      assert class_instance.add(2,4) ==6
+
+def test_multi(class_instance):
+    result = class_instance.multi(2,4)
+    assert result == 8
+
+
+
+
+
+
+
