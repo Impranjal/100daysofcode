@@ -12,7 +12,17 @@ class employee:
             
     @classmethod
     def set_raise_amt(cls,amount):
-        pass   
+        cls.rasie_amt = amount
+    #static method - 
+    @staticmethod
+    def is_workday(day):
+        if day.weekday() == 5 or  day.weekday() ==6:
+            return False
+        return True
 
 emp1= employee("pranjal","singh",4000)
 print(emp1.full_name())
+import datetime
+my_date = datetime.date(2016,7,10)
+
+print(employee.is_workday(my_date))
