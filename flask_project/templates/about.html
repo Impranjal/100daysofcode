@@ -1,24 +1,48 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 {% block contents %}
-    {% if posts is defined %}
-    {% for data in posts %}
-    <table class="worker">
-    <tr style="border:1px solid black;">
-        <th>Name</th>
-        <th>Track</th>
-        <th>Project</th>
-        <th>Manager</th>
-        
-    </tr>
-    <tr>
-        
-        <td>{{data['author']}}</td>
-        <td>{{data['Track']}}</td>
-        <td>{{data['project']}}</td>
-        <td>{{data['manager']}}</td>
-            
-    </tr>
-    {% endfor %}
+
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+           
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                   Name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Project
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Track
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Manager
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if posts is defined %}
+            {% for data in posts %}
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    {{data["author"]}}
+                </th>
+                <td class="px-6 py-4">
+                    {{data["project"]}}
+                </td>
+                <td class="px-6 py-4">
+                    {{data["Track"]}}
+                </td>
+                <td class="px-6 py-4">
+                    {{data["manager"]}}
+                </td>
+            </tr>
+           
+          
+                {% endfor %}
     {% endif %}
-</table>
+            </tr>
+        </tbody>
+    </table>
+
 {% endblock %}

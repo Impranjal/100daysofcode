@@ -1,6 +1,6 @@
 from flask import Flask,request,render_template,jsonify
 import json
-import requests
+from forms import *
 import random
 app = Flask(__name__)
 posts= [
@@ -40,7 +40,7 @@ posts= [
 ]
 @app.route('/',methods=['GET','POST'])
 def base():
-    return render_template('layout.html')
+    return render_template('base.html')
 @app.route('/about')
 def second_page():
     return render_template('about.html',posts=posts)
@@ -61,8 +61,9 @@ def add_workers():
 def worker():
     return jsonify(posts)
 
-# @app.route('/login',method=['POST'])
-# def login_about(user):
-
+@app.route('/login')
+def login():
+    forms = LoginForm()
+    return render_template('login.html',title='SIGN',form=forms)
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True)
