@@ -19,11 +19,12 @@ def blackjack():
         print(f"You lose the betted money {money}")
     elif y > 21:
         print(f"You won {money}")
-    if x or y <=21:
+    else:
         while  win:
             if o == "y":
                 user_cards.append(deal_card())
                 comp_cards.append(deal_card())
+                
          
             
         else:
