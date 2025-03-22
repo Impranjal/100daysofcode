@@ -9,10 +9,10 @@ def first(arr,x):
         elif arr[mid]<x:
             low = mid +1
         else:
-            if mid==0 or arr[mid-1] !=arr[mid]:
+            if mid==0 or arr[mid+1] !=arr[mid]:
                 return mid
             else:
-                high = mid-1
+                low= mid+1
     return -1
     
 
