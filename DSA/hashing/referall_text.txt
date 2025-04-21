@@ -2,20 +2,18 @@ Hi XXX,
 
 I am looking for a job/job change, and I was wondering will you be able to refer me to the following job opening in your company?https://careers.<yourcompany>.com/<jobID>
 
-Further details:
+Further details: 
 
-Name: string
+Name: Pranjal Singh
 
-YOE: int
+YOE: 3.8
 
-Phone number: string
+Phone number: 8178646892
 
-Email address: string
+Email address: singhpranjal2399@gmail.com
 
-Current location: string
-
-Preferred locations: csv, or array of string (if applicable)
+Current location: Bangalore
 
 I am attaching my resume with this message. Please inform me once you have referred, so that I can fill any additional details, or give my confirmation on the referral email, if needed.
 
-<you can even ignore the usual thanks & regards, if you want>
+Thanks 
